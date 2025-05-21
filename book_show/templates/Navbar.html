@@ -1,25 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Your Show</title>
+  {% load bootstrap5 %}
+  {% bootstrap_css %}
+  {% bootstrap_javascript %}
+  <style>
+    .navbar-brand img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+    }
+    .nav-link {
+      font-size: 1.1rem;
+      margin-right: 20px;
+    }
+  </style>
 </head>
 <body>
-<!-- Bootstrap CSS (CDN) -->
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-  integrity="sha384-GTZPIp8KSJ63g+Uv4R7I4vSbItr4gNK3uxRzGH+3sqZgZ/Gs6kyHE+0iwI18JdEL"
-  crossorigin="anonymous"
-/>
 
-<!-- Bootstrap JS + dependencies -->
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc5iEmRM9E3U9UaF1tD5wZlkw7CM9KFBEfG2Q6OX6"
-  crossorigin="anonymous"
-></script>
+  <nav class="navbar navbar-expand-lg" style="background-color: #0d1b2a;">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center text-white me-4"  href="#">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfl_zLiq9FsBzbUgLVpSDV86t41aRxv4IJYg&s" alt="Logo" class="me-2 rounded-circle">
+        BookYourShow
+      </a>
+
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto d-flex align-items-center">
+          
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">My Bookings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Wallet</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
 </body>
 </html>
